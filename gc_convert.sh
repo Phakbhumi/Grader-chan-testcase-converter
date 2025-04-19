@@ -31,7 +31,7 @@ for file in *; do
         if [ "$file_num" -ne "$in_cnt" ]; then
             warning=1
         fi
-        [ "$1" == "-p" ] && cp "$file" "input/input${file_num}.txt" || mv "$file" "output/output${file_num}.txt" 
+        [ "$1" == "-p" ] && cp "$file" "input/input${file_num}.txt" || mv "$file" "input/input${file_num}.txt" 
         in_cnt=$((in_cnt+1))
     elif [ "$extension" == "a" ]; then
         if [ "$file_num" -ne "$out_cnt" ]; then
